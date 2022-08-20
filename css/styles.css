@@ -573,7 +573,22 @@ ul {
     display: flex;
 }
 
+.div-footer-join {
+    margin-right: 93px;
+}
+
 .join-footer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--background-colour);
+}
+
+.footer-rassilka {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -640,6 +655,46 @@ ul {
 .linkedin-footer:focus,
 .linkedin-footer:hover {
     fill: var(--background-colour)
+}
+
+
+.online-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.online-form {
+    display: flex;
+}
+
+.online-btn {
+    width: 200px;
+    height: 50px;
+    background: var(--accent-text-colour);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--background-colour);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 28px;
+    letter-spacing: 0.06em; 
+}
+
+.send-icon {
+    fill: var(--background-colour);
+    margin-left: 10px;
 }
 
 .list-ptf {
@@ -772,6 +827,7 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms;
+    padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -796,6 +852,10 @@ ul {
     transform: translate(-50%, -50%);
 }
 
+.modal-icon:focus, .modal-icon:hover {
+    fill: var(--accent-text-colour);
+}
+
 
 .is-hidden {
     opacity: 0;
@@ -805,4 +865,146 @@ ul {
 
 .no-scroll {
     overflow: hidden;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-colour);
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.form-input {
+    padding-left: 42px;
+    padding-right: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.form-input:focus {
+    outline-color: var(--accent-text-colour) ;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+.modal-form-p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--light-grey-colour);
+}
+
+.form-input-comment {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 12px;
+    resize: none;
+}
+
+.form-input-comment:focus {
+    outline-color: var(--accent-text-colour);
+}
+
+.form-input-comment::placeholder {
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em; 
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
+.modal-form-svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input:focus + .modal-form-svg {
+    fill: var(--accent-text-colour);
+}
+
+.button-field {
+    text-align: center;
+}
+
+.send-btn {
+    background-color: var(--accent-text-colour);
+    color: var(--background-colour);
+    width: 200px;
+    height: 50px;
+    border: 1px transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--light-grey-colour);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.check-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--primary-text-colour);
+    border-radius: 3px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon {
+    fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+    background-color: var(--accent-text-colour);
+    border: none;
+}
+
+.input-check:checked + .check-text .check-icon {
+    fill: var(--background-colour);
+    border: none;
+}
+
+.link-input {
+    color: var(--accent-text-colour);
 }
