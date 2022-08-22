@@ -73,6 +73,7 @@ img {
 
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -852,7 +853,7 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.modal-icon:focus, .modal-icon:hover {
+.modal-close:focus, .modal-close:hover {
     fill: var(--accent-text-colour);
 }
 
@@ -964,13 +965,14 @@ ul {
 }
 
 .check-text {
+    display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
     letter-spacing: 0.03em;
-
     color: var(--light-grey-colour);
+    align-items: center;
+    justify-content: center;
 }
 
 .send-btn:hover,
@@ -993,6 +995,10 @@ ul {
 
 .check-icon {
     fill: transparent;
+}
+
+.check-text span:focus {
+    border: 2px solid var(--accent-text-colour);
 }
 
 .input-check:checked + .check-text span {
